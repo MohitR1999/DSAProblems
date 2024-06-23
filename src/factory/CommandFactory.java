@@ -3,6 +3,7 @@ package factory;
 import abstracts.Command;
 import abstracts.Solution;
 import concretes.commands.SolutionCommand;
+import concretes.solutions.leetcode.arrays_and_strings.Leetcode_26;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_27;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_88;
 import concretes.solutions.recursion.Solution_8_1;
@@ -47,6 +48,10 @@ public class CommandFactory {
 
         else if (type != null && type.equals("27")) {
             solution = new Leetcode_27();
+        }
+
+        else if (type != null && type.equals("26")) {
+            solution = new Leetcode_26();
         }
         
         solutionCommand.setSolution(solution);
