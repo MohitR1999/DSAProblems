@@ -7,11 +7,13 @@ import concretes.leetcode.backtracking.Leetcode_17;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_26;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_27;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_88;
+import concretes.solutions.leetcode.binary_search.Leetcode_35;
 import concretes.solutions.leetcode.binary_tree_bfs.Leetcode_199;
 import concretes.solutions.leetcode.graph_bfs.Leetcode_909;
 import concretes.solutions.leetcode.graph_general.Leetcode_200;
 import concretes.solutions.leetcode.hashmap.Leetcode_383;
 import concretes.solutions.leetcode.intervals.Leetcode_228;
+import concretes.solutions.leetcode.kadane.Leetcode_53;
 import concretes.solutions.leetcode.matrix.Leetcode_36;
 import concretes.solutions.leetcode.sliding_window.Leetcode_209;
 import concretes.solutions.leetcode.stack.Leetcode_20;
@@ -107,6 +109,14 @@ public class CommandFactory {
 
         else if (type != null && type.equals("17")) {
             solution = new Leetcode_17();
+        }
+
+        else if (type != null && type.equals("53")) {
+            solution = new Leetcode_53();
+        }
+
+        else if (type != null && type.equals("35")) {
+            solution = new Leetcode_35();
         }
         
         solutionCommand.setSolution(solution);
