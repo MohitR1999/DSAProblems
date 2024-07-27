@@ -6,6 +6,7 @@ import concretes.commands.SolutionCommand;
 import concretes.leetcode.backtracking.Leetcode_17;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_26;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_27;
+import concretes.solutions.leetcode.arrays_and_strings.Leetcode_80;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_88;
 import concretes.solutions.leetcode.binary_search.Leetcode_35;
 import concretes.solutions.leetcode.binary_tree_bfs.Leetcode_199;
@@ -16,7 +17,10 @@ import concretes.solutions.leetcode.hashmap.Leetcode_383;
 import concretes.solutions.leetcode.heap.Leetcode_215;
 import concretes.solutions.leetcode.intervals.Leetcode_228;
 import concretes.solutions.leetcode.kadane.Leetcode_53;
+import concretes.solutions.leetcode.math.Leetcode_9;
 import concretes.solutions.leetcode.matrix.Leetcode_36;
+import concretes.solutions.leetcode.multi_dimensional_dp.Leetcode_120;
+import concretes.solutions.leetcode.one_dimensional_dp.Leetcode_70;
 import concretes.solutions.leetcode.sliding_window.Leetcode_209;
 import concretes.solutions.leetcode.stack.Leetcode_20;
 import concretes.solutions.leetcode.trie.Leetcode_208;
@@ -127,6 +131,22 @@ public class CommandFactory {
 
         else if (type != null && type.equals("67")) {
             solution = new Leetcode_67();
+        }
+
+        else if (type != null && type.equals("9")) {
+            solution = new Leetcode_9();
+        }
+
+        else if (type != null && type.equals("70")) {
+            solution = new Leetcode_70();
+        }
+
+        else if (type != null && type.equals("120")) {
+            solution = new Leetcode_120();
+        }
+
+        else if (type != null && type.equals("80")) {
+            solution = new Leetcode_80();
         }
         
         solutionCommand.setSolution(solution);
