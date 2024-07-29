@@ -22,6 +22,7 @@ import concretes.solutions.leetcode.matrix.Leetcode_36;
 import concretes.solutions.leetcode.multi_dimensional_dp.Leetcode_120;
 import concretes.solutions.leetcode.one_dimensional_dp.Leetcode_70;
 import concretes.solutions.leetcode.sliding_window.Leetcode_209;
+import concretes.solutions.leetcode.sliding_window.Leetcode_3;
 import concretes.solutions.leetcode.stack.Leetcode_20;
 import concretes.solutions.leetcode.trie.Leetcode_208;
 import concretes.solutions.leetcode.two_pointers.Leetcode_125;
@@ -152,6 +153,10 @@ public class CommandFactory {
 
         else if (type != null && type.equals("392")) {
             solution = new Leetcode_392();
+        }
+
+        else if (type != null && type.equals("3")) {
+            solution = new Leetcode_3();
         }
         
         solutionCommand.setSolution(solution);
