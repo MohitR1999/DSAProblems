@@ -13,6 +13,7 @@ import concretes.solutions.leetcode.binary_tree_bfs.Leetcode_199;
 import concretes.solutions.leetcode.binary_tree_bfs.Leetcode_637;
 import concretes.solutions.leetcode.bit_manipulation.Leetcode_67;
 import concretes.solutions.leetcode.graph_bfs.Leetcode_909;
+import concretes.solutions.leetcode.graph_general.Leetcode_130;
 import concretes.solutions.leetcode.graph_general.Leetcode_200;
 import concretes.solutions.leetcode.hashmap.Leetcode_205;
 import concretes.solutions.leetcode.hashmap.Leetcode_383;
@@ -187,6 +188,10 @@ public class CommandFactory {
 
         else if (type != null && type.equals("637")) {
             solution = new Leetcode_637();
+        }
+
+        else if (type != null && type.equals("130")) {
+            solution = new Leetcode_130();
         }
         
         solutionCommand.setSolution(solution);
