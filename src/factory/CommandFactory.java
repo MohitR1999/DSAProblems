@@ -4,6 +4,7 @@ import abstracts.Command;
 import abstracts.Solution;
 import concretes.commands.SolutionCommand;
 import concretes.leetcode.backtracking.Leetcode_17;
+import concretes.leetcode.backtracking.Leetcode_77;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_26;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_27;
 import concretes.solutions.leetcode.arrays_and_strings.Leetcode_80;
@@ -34,6 +35,7 @@ import concretes.solutions.leetcode.sliding_window.Leetcode_3;
 import concretes.solutions.leetcode.stack.Leetcode_20;
 import concretes.solutions.leetcode.stack.Leetcode_71;
 import concretes.solutions.leetcode.trie.Leetcode_208;
+import concretes.solutions.leetcode.trie.Leetcode_211;
 import concretes.solutions.leetcode.two_pointers.Leetcode_125;
 import concretes.solutions.leetcode.two_pointers.Leetcode_392;
 import concretes.solutions.recursion.Solution_8_1;
@@ -202,6 +204,14 @@ public class CommandFactory {
 
         else if (type != null && type.equals("127")) {
             solution = new Leetcode_127();
+        }
+
+        else if (type != null && type.equals("211")) {
+            solution = new Leetcode_211();
+        }
+
+        else if (type != null && type.equals("77")) {
+            solution = new Leetcode_77();
         }
         
         solutionCommand.setSolution(solution);

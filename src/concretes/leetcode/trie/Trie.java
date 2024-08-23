@@ -58,9 +58,28 @@ public class Trie {
     }
     
     public boolean search(String word) {
-        TrieNode node = this.getNode(word);
-        if (node == null) return false;
-        return node.isWordEnd();
+        return searchHelper(word, 0, root);
+    }
+
+    private boolean searchHelper(String word, int index, TrieNode node) {
+        if (node == null) {
+            return false;
+        }
+        if (index == word.length()) {
+            return node.isWordEnd();
+        }
+        char c = word.charAt(index);
+        if (c == '.') {
+            for (TrieNode child : node.getChilNodes()) {
+                if (searchHelper(word, index + 1, child)) {
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            int i = c - 'a';
+            return searchHelper(word, index + 1, node.getChilNodes()[i]);
+        }
     }
 
     public TrieNode getNode(String word) {

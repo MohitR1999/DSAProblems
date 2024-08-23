@@ -1,9 +1,3 @@
-127
-hit
-cog
-5
-hot
-dot
-dog
-lot
-log
+77
+4
+3
