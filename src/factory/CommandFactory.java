@@ -39,6 +39,8 @@ import concretes.solutions.leetcode.trie.Leetcode_208;
 import concretes.solutions.leetcode.trie.Leetcode_211;
 import concretes.solutions.leetcode.two_pointers.Leetcode_125;
 import concretes.solutions.leetcode.two_pointers.Leetcode_392;
+import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_1;
+import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_2;
 import concretes.solutions.recursion.Solution_8_1;
 import concretes.solutions.sorting.Solution_10_0_1;
 import concretes.solutions.sorting.Solution_10_0_2;
@@ -217,6 +219,15 @@ public class CommandFactory {
 
         else if (type != null && type.equals("502")) {
             solution = new Leetcode_502();
+        }
+
+        // Neetcode solutions
+        else if (type != null && type.equals("n1")) {
+            solution = new Neetcode_1();
+        }
+
+        else if (type != null && type.equals("n2")) {
+            solution = new Neetcode_2();
         }
         
         solutionCommand.setSolution(solution);
