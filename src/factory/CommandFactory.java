@@ -21,6 +21,7 @@ import concretes.solutions.leetcode.graph_general.Leetcode_200;
 import concretes.solutions.leetcode.hashmap.Leetcode_205;
 import concretes.solutions.leetcode.hashmap.Leetcode_383;
 import concretes.solutions.leetcode.heap.Leetcode_215;
+import concretes.solutions.leetcode.heap.Leetcode_502;
 import concretes.solutions.leetcode.intervals.Leetcode_228;
 import concretes.solutions.leetcode.intervals.Leetcode_56;
 import concretes.solutions.leetcode.kadane.Leetcode_53;
@@ -212,6 +213,10 @@ public class CommandFactory {
 
         else if (type != null && type.equals("77")) {
             solution = new Leetcode_77();
+        }
+
+        else if (type != null && type.equals("502")) {
+            solution = new Leetcode_502();
         }
         
         solutionCommand.setSolution(solution);
