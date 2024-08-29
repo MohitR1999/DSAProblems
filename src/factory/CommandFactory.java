@@ -41,6 +41,8 @@ import concretes.solutions.leetcode.two_pointers.Leetcode_125;
 import concretes.solutions.leetcode.two_pointers.Leetcode_392;
 import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_1;
 import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_2;
+import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_3;
+import concretes.solutions.neetcode.arrays_and_hashing.Neetcode_4;
 import concretes.solutions.recursion.Solution_8_1;
 import concretes.solutions.sorting.Solution_10_0_1;
 import concretes.solutions.sorting.Solution_10_0_2;
@@ -228,6 +230,13 @@ public class CommandFactory {
 
         else if (type != null && type.equals("n2")) {
             solution = new Neetcode_2();
+        }
+
+        else if (type != null && type.equals("n3")) {
+            solution = new Neetcode_3();
+        }
+        else if (type != null && type.equals("n4")) {
+            solution = new Neetcode_4();
         }
         
         solutionCommand.setSolution(solution);
