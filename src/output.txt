@@ -1,0 +1,6 @@
+Encoded string: 2#we4#sayt1#:4#yers
+Decoded string: 
+we
+sayt
+:
+yers
